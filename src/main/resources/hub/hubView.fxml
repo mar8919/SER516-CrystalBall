@@ -61,7 +61,7 @@
             </AnchorPane>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
                <children>
-                  <Button id="gray-round" layoutX="76.0" layoutY="43.0" mnemonicParsing="false" prefHeight="275.0" prefWidth="275.0">
+                  <Button id="gray-round" layoutX="63.0" layoutY="30.0" mnemonicParsing="false" prefHeight="300.0" prefWidth="300.0">
                      <graphic>
                         <ImageView fitHeight="199.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true">
                            <image>

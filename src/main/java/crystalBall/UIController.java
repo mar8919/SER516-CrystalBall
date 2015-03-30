@@ -36,8 +36,11 @@ public class UIController{
 		wipersRoot 	= FXMLLoader.load(getClass().getClassLoader().getResource("wiper/wipersView.fxml"));
 		cruiseRoot	= FXMLLoader.load(getClass().getClassLoader().getResource("cruise/cruiseView.fxml"));*/
 
-		Scene hubScene = new Scene(hubRoot, 960, 540);
+		Scene hubScene = new Scene(hubRoot);
+		//hubScene.ge
+		//hubScene.set
 		addScene(Screen.HUB,hubScene);/*
+		
 		addScene(Screen.CLIMATE,new Scene(climateRoot, 900, 600));
 		addScene(Screen.LIGHTS,new Scene(lightsRoot, 900, 600));
 		addScene(Screen.MEDIA,new Scene(mediaRoot, 900, 600));

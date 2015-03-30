@@ -1,0 +1,18 @@
+#gray-round {
+    -fx-background-color:  #6d6d6d;
+    -fx-background-radius: 40;
+}
+
+#gray-less-round {
+    -fx-background-color:  linear-gradient(#6d6d6d, #6d6d6d);
+    -fx-background-radius: 10;
+}
+
+#gray-round-text {
+    -fx-background-color:  #6d6d6d;
+    -fx-background-radius: 40;
+    -fx-font-family: "System";
+	-fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(#ffffff, #ffffff);
+    -fx-font-size: 58px;
+}

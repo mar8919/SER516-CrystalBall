@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #ffffff;" stylesheets="@../maincss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hub.HubController">
+   <children>
+      <GridPane prefHeight="720.0" prefWidth="1280.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="720.0" minHeight="10.0" prefHeight="720.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button id="gray-round-text" layoutX="100.0" layoutY="260.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #7d7d7d; -fx-background-radius: 40;" text="CD" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="579.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../homeButton.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Button id="gray-round-text" layoutX="64.0" layoutY="260.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #7d7d7d; -fx-background-radius: 40;" text="RADIO" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Button id="gray-round-text" layoutX="24.0" layoutY="260.0" mnemonicParsing="false" prefHeight="200.0" prefWidth="275.0" style="-fx-background-color: #7d7d7d; -fx-background-radius: 40;" text="AUX" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</Pane>

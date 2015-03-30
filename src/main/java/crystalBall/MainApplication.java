@@ -52,36 +52,33 @@ public class MainApplication extends Application {
     		
     	};
         Parent root;
-		try {
-			root = FXMLLoader.load(getClass().getClassLoader().getResource("hub/hubView.fxml"));
-	        stage.setTitle("CrystalBall");
-	        stage.setScene(new Scene(root, 960, 540));
-	        stage.show();
-	        stage.setMaxHeight(540);
-	        stage.setMaxWidth(960);
-	        stage.setResizable(false);
-	        stage.addEventHandler(KeyEvent.KEY_RELEASED, vrHandler);
-	        
-	        Thread th = new Thread(vrControl);
-	        th.setDaemon(true);
-	        th.start();
-	        
-	        stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+		//root = FXMLLoader.load(getClass().getClassLoader().getResource("hub/hubView.fxml"));
+		stage.setTitle("CrystalBall");
+		//stage.setScene(new Scene(root));
+		stage.show();
+		//stage.setHeight(720);
+		System.out.println(stage.getHeight());
+		System.out.println(stage.getWidth());
+		//stage.setMaxHeight(720);
+		//stage.setMaxWidth(1280);
+		stage.setResizable(false);
+		stage.addEventHandler(KeyEvent.KEY_RELEASED, vrHandler);
+		
+		Thread th = new Thread(vrControl);
+		th.setDaemon(true);
+		th.start();
+		
+		stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
 
-	            public void handle(WindowEvent event) {
-	                Platform.runLater(new Runnable() {
+		    public void handle(WindowEvent event) {
+		        Platform.runLater(new Runnable() {
 
-	                    public void run() {
-	                        System.exit(0);
-	                    }
-	                });
-	            }
-	        });
-	        
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		            public void run() {
+		                System.exit(0);
+		            }
+		        });
+		    }
+		});
         
     } 
     
